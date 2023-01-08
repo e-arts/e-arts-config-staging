@@ -6,6 +6,6 @@ spec:
   selector:
     app: e-arts-app
   ports:
-  - port: 8945
+  - port: 3000
     protocol: TCP
-    targetPort: 8945
+    targetPort: 3000

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-arts-app
+spec:
+  selector:
+    matchLabels:
+      app: e-arts-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: e-arts-app
+    spec:
+      containers:
+        - name: e-arts-app
+          image: daniellettner/e-arts:v0.0.2
+          ports:
+            - containerPort: 8945

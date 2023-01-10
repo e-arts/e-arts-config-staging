@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/e-arts/e-arts-config-prod.git
+    repoURL: https://github.com/e-arts/e-arts-config-staging.git
     targetRevision: HEAD
     path: dev
   destination: 
